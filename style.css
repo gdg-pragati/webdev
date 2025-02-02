@@ -1,0 +1,124 @@
+body {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+.bg-dark, .navbar-dark .navbar-nav .nav-link, .btn-primary, .modal-content, .list-group-item {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+}
+.text-muted {
+    color: #b0bec5 !important;
+}
+a {
+    color: #82b1ff;
+}
+a:hover {
+    color: #448aff;
+}
+.btn-primary {
+    border-color: #1a73e8;
+}
+.btn-close {
+    filter: invert(1);
+}
+iframe {
+    border: 1px solid #444;
+}
+.animate-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animate-btn:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4); 
+}
+
+   
+.animate-btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 123, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite;
+    z-index: -1; 
+}
+
+@keyframes pulse {
+    0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    }
+}
+
+
+#about {
+    background-color: #121212; 
+    color: white; 
+}
+
+#about h2 {
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #f8f9fa; 
+}
+
+#about p {
+    font-size: 1.125rem; 
+    line-height: 1.6; 
+    color: #dcdcdc; 
+}
+
+#about ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+#about li {
+    font-size: 1rem;
+    color: #b0bec5;
+}
+
+#about li i {
+    color: #28a745; 
+    margin-right: 8px; 
+}
+
+#about .btn-primary {
+    background-color: #1a73e8; 
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
+}
+
+#about .btn-primary:hover {
+    background-color: #155ab3; 
+}
+
+
+#about img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+@media (max-width: 767px) {
+    #about h2 {
+        font-size: 2.5rem; 
+    }
+
+    #about p {
+        font-size: 1rem; 
+    }
+}
